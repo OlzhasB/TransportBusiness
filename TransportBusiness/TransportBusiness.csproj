@@ -44,15 +44,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Agreement.cs" />
+    <Compile Include="Algorithm.cs" />
     <Compile Include="Cargo.cs" />
     <Compile Include="Carrier.cs" />
     <Compile Include="Customer.cs" />
+    <Compile Include="Driver.cs" />
+    <Compile Include="ForwardingAgent.cs" />
+    <Compile Include="MainLogic.cs" />
     <Compile Include="Order.cs" />
-    <Compile Include="Person.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Transport.cs" />
-    <Compile Include="Worker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

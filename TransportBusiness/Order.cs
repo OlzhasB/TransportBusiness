@@ -8,23 +8,34 @@ namespace TransportBusiness
 {
     class Order
     {
-        public Order(int orderID, int weightOfCargo, string departureCity,
-            string arrivalCity, int customerID, int carrierID, int leadTimeHours)
+        public Order() { }
+        public Order(int orderID, List<Cargo> Cargoes, string departureCity,
+            string arrivalCity, Customer customer, int carrierID, decimal price, DateTime creationDate, 
+            DateTime departureDate, DateTime arrivalDate, DateTime completionDate)
         {
             this.orderID = orderID;
-            this.weightOfCargo = weightOfCargo;
+            this.Cargoes = Cargoes;
             this.departureCity = departureCity;
             this.arrivalCity = arrivalCity;
-            this.customerID = customerID;
+            this.customer = customer;
             this.carrierID = carrierID;
-            this.leadTimeHours = leadTimeHours;
+            this.price = price;
+            this.creationDate = creationDate;
+            this.departureDate = departureDate;
+            this.arrivalDate = arrivalDate;
+            this.completionDate = completionDate;
         }
         public int orderID { get; set; }
-        public int weightOfCargo { get; set; }
+        public List<Cargo> Cargoes { get; set; }
         public string departureCity { get; set; }
         public string arrivalCity { get; set; }
-        public int customerID { get; set; }
+        public Customer customer { get; set; }
+
         public int carrierID { get; set; }
-        public int leadTimeHours { get; set; }
+        public decimal price { get; set; }
+        public DateTime creationDate { get; set; }
+        public DateTime departureDate { get; set; }
+        public DateTime arrivalDate { get; set; }
+        public DateTime completionDate { get; set; }
     }
 }

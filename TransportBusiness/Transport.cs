@@ -12,10 +12,10 @@ namespace TransportBusiness
         public string transportType { get; set; }
         public int[] cargoID { get; set; }
         public string transportName { get; set; }
-        public float loadCapacity { get; set; }
-        public float volume { get; set; }
-        public float freeWeight { get { return freeWeight; } set { freeWeight = loadCapacity; } }
-        public float freeVolume { get { return freeVolume; } set { freeVolume = volume; } }
+        public double loadCapacity { get; set; }
+        public double volume { get; set; }
+        public double freeWeight { get { return freeWeight; } set { freeWeight = loadCapacity; } }
+        public double freeVolume { get { return freeVolume; } set { freeVolume = volume; } }
         public void loadCargo(Cargo[] cs)
         {
             foreach (Cargo c in cs)

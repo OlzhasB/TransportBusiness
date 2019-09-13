@@ -9,9 +9,8 @@ namespace TransportBusiness
     class Cargo
     {
         public int cargoID { get; set; }
-        public float weight { get; set; }
-        public float volume { get; set; }
+        public double weight { get; set; }
+        public double volume { get; set; }
         public string name { get; set; }
-        public string type { get; set; }
     }
 }
