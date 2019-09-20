@@ -16,6 +16,7 @@ namespace TransportBusiness
         public double volume { get; set; }
         public double freeWeight { get { return freeWeight; } set { freeWeight = loadCapacity; } }
         public double freeVolume { get { return freeVolume; } set { freeVolume = volume; } }
+        public string location { get; set; }
         public void loadCargo(Cargo[] cs)
         {
             foreach (Cargo c in cs)
